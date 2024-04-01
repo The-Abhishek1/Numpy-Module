@@ -38,3 +38,42 @@ print(arr3.ndim)
 arr4 = np.array([1,2,3], ndmin= 5)
 
 print("Dimension of Array 4 : ",arr4.ndim)
+
+#Working with Array Elements
+
+print(arr3[1][0])
+print(arr2[1])
+
+#Negative indexing
+
+print(arr3[-1,0])
+
+#Array Slicing 1D
+arr5  = np.array([1,2,3,4,5,6,7,8,9])
+print("Array Slicing1:", arr5[1:4])
+print("Array Slicing2:", arr5[4:])
+#using Step value
+print("Array Slicing3:", arr5[1:5:2])
+
+# 2D array Slicing
+
+print("2d array slicing:",arr2[1,1:3])
+
+#checking the datatype of an array
+
+print("data type array 5:", arr5.dtype)
+
+#String Array 
+
+string_arr1 = np.array(["Apple","Banana","Mango"])
+
+print(string_arr1)
+
+#Checking the datatype of string array
+print("data type of string_arr1:",string_arr1.dtype)
+
+#manually setting datatype of an array
+
+string_arr2 = np.array([1,2,3,4], dtype='S')
+
+print("Datatype of an array string_arr2:",string_arr2.dtype)
