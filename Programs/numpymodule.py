@@ -77,3 +77,54 @@ print("data type of string_arr1:",string_arr1.dtype)
 string_arr2 = np.array([1,2,3,4], dtype='S')
 
 print("Datatype of an array string_arr2:",string_arr2.dtype)
+
+#COPY Method
+
+x = np.array([1,2,3])
+y = x.copy()
+
+print("Displaying data copied from x:",y)
+
+#View Method
+
+z = x.view()
+x[0] = 10
+
+# displaying after changing x's first value
+print("Displaying data from Z:",z)
+print("Displaying data from x:",x)
+
+z[0] = 20
+
+# displaying after changing z's first value
+print("Displaying data from Z:",z)
+print("Displaying data from x:",x)
+
+#Note when view method is used when the original data changes
+# it also changes the variable values
+
+# Check if array owns it's data
+
+print(y.base) # Copied data returns none
+print(z.base)
+
+#Getting the shape of an array
+print("Shape of an array 3:",arr3.shape)
+
+#Array Reshaping
+
+arr6 = np.array([1,2,3,4,5,6,7,8,9,10,11,12])
+newarr = arr6.reshape(4,3)
+
+#printing reshaping array
+print("printing reshaping array:",newarr)
+
+#Reshaping from 1D to 3D
+
+newarr1 = arr6.reshape(2,3,2)
+print("Printing Reshaping from 1D to 3D",newarr1)
+
+#Array Iterating
+
+for x in newarr:
+  print(x)
