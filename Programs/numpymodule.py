@@ -133,6 +133,14 @@ for x in newarr:
 #Array Join Method
 joinArr1 = np.array([1,2,3])
 joinArr2 = np.array([4,5,6])
-arr = np.concatenate((joinArr1,joinArr2))
+joinArr = np.concatenate((joinArr1,joinArr2))
 
-print("Array After Joining:",arr)
+print("Array After Joining:",joinArr)
+
+
+#Joining Arrays Using Stack Functions
+
+joinArr3 = np.stack((joinArr1,joinArr2),axis =1)
+
+print("Array After Joining using Stack method:",joinArr3)
+
