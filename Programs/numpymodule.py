@@ -128,3 +128,11 @@ print("Printing Reshaping from 1D to 3D",newarr1)
 
 for x in newarr:
   print(x)
+  
+  
+#Array Join Method
+joinArr1 = np.array([1,2,3])
+joinArr2 = np.array([4,5,6])
+arr = np.concatenate((joinArr1,joinArr2))
+
+print("Array After Joining:",arr)
