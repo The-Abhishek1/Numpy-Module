@@ -144,3 +144,14 @@ joinArr3 = np.stack((joinArr1,joinArr2),axis =1)
 
 print("Array After Joining using Stack method:",joinArr3)
 
+#Joining Arrays Using Stack Functions along rows
+
+joinArr4= np.hstack((joinArr1,joinArr2))
+
+print("Array After Joining using Stack method along Rows:",joinArr4)
+
+#Joining Arrays Using Stack Functions along columns
+
+joinArr5= np.vstack((joinArr1,joinArr2))
+
+print("Array After Joining using Stack method along Columns:",joinArr5)
